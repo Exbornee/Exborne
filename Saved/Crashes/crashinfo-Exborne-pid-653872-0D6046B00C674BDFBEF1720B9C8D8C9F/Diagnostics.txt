@@ -1,0 +1,48 @@
+Generating report for minidump
+
+Application version 5.5.4.0
+ ... built from changelist 0
+
+OS version Linux 6.14.9-300.fc42.x86_64 (network name: fedora)
+Running 32 x86_64 processors (63 logical cores)
+Exception was "SIGSEGV: invalid attempt to write memory at address 0x0000000000000003"
+
+<SOURCE START>
+<SOURCE END>
+
+<CALLSTACK START>
+libUnrealEditor-Engine.so!DisposeInvalidEditorOnlyData(UMaterialInterface*, FString const&) [/home/platinumlucario/UnrealEngine/5.5.4/Engine/Source/Runtime/CoreUObject/Public/UObject/UObjectBaseUtility.h:179]
+libUnrealEditor-Engine.so!UMaterialInterface::PostDuplicate(bool) [/home/platinumlucario/UnrealEngine/5.5.4/Engine/Source/./Runtime/Engine/Private/Materials/MaterialInterface.cpp:752]
+libUnrealEditor-Engine.so!UMaterial::PostDuplicate(bool) [/home/platinumlucario/UnrealEngine/5.5.4/Engine/Source/./Runtime/Engine/Private/Materials/Material.cpp:3048]
+libUnrealEditor-CoreUObject.so!StaticDuplicateObjectEx(FObjectDuplicationParameters&) [/home/platinumlucario/UnrealEngine/5.5.4/Engine/Source/./Runtime/CoreUObject/Private/UObject/UObjectGlobals.cpp:3187]
+libUnrealEditor-CoreUObject.so!StaticDuplicateObject(UObject const*, UObject*, FName, EObjectFlags, UClass*, EDuplicateMode::Type, EInternalObjectFlags) [/home/platinumlucario/UnrealEngine/5.5.4/Engine/Source/./Runtime/CoreUObject/Private/UObject/UObjectGlobals.cpp:3015]
+libUnrealEditor-MaterialEditor.so!FMaterialEditor::UpdateOriginalMaterial() [/home/platinumlucario/UnrealEngine/5.5.4/Engine/Source/./Editor/MaterialEditor/Private/MaterialEditor.cpp:3038]
+libUnrealEditor-MaterialEditor.so!FMaterialEditor::PostUndo(bool) [/home/platinumlucario/UnrealEngine/5.5.4/Engine/Source/./Editor/MaterialEditor/Private/MaterialEditor.cpp:7305]
+libUnrealEditor-UnrealEd.so!UEditorEngine::BroadcastPostUndoRedo(FTransactionContext const&, bool) [/home/platinumlucario/UnrealEngine/5.5.4/Engine/Source/./Editor/UnrealEd/Private/EditorServer.cpp:5338]
+libUnrealEditor-UnrealEd.so!UEditorEngine::HandleTransactorRedoUndo(FTransactionContext const&, bool, bool) [/home/platinumlucario/UnrealEngine/5.5.4/Engine/Source/./Editor/UnrealEd/Private/EditorServer.cpp:1178]
+libUnrealEditor-UnrealEd.so!TBaseUObjectMethodDelegateInstance<false, UEditorEngine, void (FTransactionContext const&, bool), FDefaultDelegateUserPolicy>::ExecuteIfSafe(FTransactionContext const&, bool) const [/home/platinumlucario/UnrealEngine/5.5.4/Engine/Source/Runtime/Core/Public/Templates/Invoke.h:66]
+libUnrealEditor-UnrealEd.so!void TMulticastDelegateBase<FDefaultDelegateUserPolicy>::Broadcast<IBaseDelegateInstance<void (FTransactionContext const&, bool), FDefaultDelegateUserPolicy>, FTransactionContext const&, bool>(FTransactionContext const&, bool) const [/home/platinumlucario/UnrealEngine/5.5.4/Engine/Source/Runtime/Core/Public/Delegates/MulticastDelegateBase.h:257]
+libUnrealEditor-UnrealEd.so!UTransBuffer::Undo(bool) [/home/platinumlucario/UnrealEngine/5.5.4/Engine/Source/Runtime/Core/Public/Delegates/DelegateSignatureImpl.inl:1079]
+libUnrealEditor-UnrealEd.so!UEditorEngine::UndoTransaction(bool) [/home/platinumlucario/UnrealEngine/5.5.4/Engine/Source/./Editor/UnrealEd/Private/EditorServer.cpp:1303]
+libUnrealEditor-MaterialEditor.so!FMaterialEditor::UndoGraphAction() [/home/platinumlucario/UnrealEngine/5.5.4/Engine/Source/./Editor/MaterialEditor/Private/MaterialEditor.cpp:7002]
+libUnrealEditor-MaterialEditor.so!TBaseSPMethodDelegateInstance<false, FMaterialEditor, (ESPMode)1, void (), FDefaultDelegateUserPolicy>::ExecuteIfSafe() const [/home/platinumlucario/UnrealEngine/5.5.4/Engine/Source/Runtime/Core/Public/Templates/Invoke.h:66]
+libUnrealEditor-Slate.so!FUICommandList::ConditionalProcessCommandBindings(FKey, bool, bool, bool, bool, bool) const [/home/platinumlucario/UnrealEngine/5.5.4/Engine/Source/Runtime/Core/Public/Delegates/DelegateSignatureImpl.inl:634]
+libUnrealEditor-Slate.so!FUICommandList::ProcessCommandBindings(FKeyEvent const&) const [/home/platinumlucario/UnrealEngine/5.5.4/Engine/Source/./Runtime/Slate/Private/Framework/Commands/UICommandList.cpp:178]
+libUnrealEditor-UnrealEd.so!SStandaloneAssetEditorToolkitHost::OnKeyDown(FGeometry const&, FKeyEvent const&) [/home/platinumlucario/UnrealEngine/5.5.4/Engine/Source/./Editor/UnrealEd/Private/Toolkits/SStandaloneAssetEditorToolkitHost.cpp:424]
+libUnrealEditor-UnrealEd.so!non-virtual thunk to SStandaloneAssetEditorToolkitHost::OnKeyDown(FGeometry const&, FKeyEvent const&) [/home/platinumlucario/UnrealEngine/5.5.4/Engine/Source/./Editor/UnrealEd/Private/Toolkits/SStandaloneAssetEditorToolkitHost.cpp:0]
+libUnrealEditor-Slate.so!FSlateApplication::ProcessKeyDownEvent(FKeyEvent const&) [/home/platinumlucario/UnrealEngine/5.5.4/Engine/Source/./Runtime/Slate/Private/Framework/Application/SlateApplication.cpp:4828]
+libUnrealEditor-Slate.so!FSlateApplication::OnKeyDown(int, unsigned int, bool) [/home/platinumlucario/UnrealEngine/5.5.4/Engine/Source/./Runtime/Slate/Private/Framework/Application/SlateApplication.cpp:4735]
+libUnrealEditor-ApplicationCore.so!FLinuxApplication::ProcessDeferredMessage(SDL_Event) [/home/platinumlucario/UnrealEngine/5.5.4/Engine/Source/./Runtime/ApplicationCore/Private/Linux/LinuxApplication.cpp:321]
+libUnrealEditor-ApplicationCore.so!FLinuxPlatformApplicationMisc::PumpMessages(bool) [/home/platinumlucario/UnrealEngine/5.5.4/Engine/Source/./Runtime/ApplicationCore/Private/Linux/LinuxApplication.cpp:237]
+UnrealEditor!FEngineLoop::Tick() [/home/platinumlucario/UnrealEngine/5.5.4/Engine/Source/./Runtime/Launch/Private/LaunchEngineLoop.cpp:5800]
+UnrealEditor!GuardedMain(char16_t const*) [/home/platinumlucario/UnrealEngine/5.5.4/Engine/Source/./Runtime/Launch/Private/Launch.cpp:69]
+libUnrealEditor-UnixCommonStartup.so!CommonUnixMain(int, char**, int (*)(char16_t const*), void (*)()) [/home/platinumlucario/UnrealEngine/5.5.4/Engine/Source/./Runtime/Unix/UnixCommonStartup/Private/UnixCommonStartup.cpp:323]
+libc.so.6!UnknownFunction(0x35f4)
+libc.so.6!__libc_start_main(+0x87)
+UnrealEditor!_start(+0x29)
+
+<CALLSTACK END>
+
+0 loaded modules
+
+Report end!

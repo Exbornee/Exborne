@@ -1,0 +1,107 @@
+﻿Log file open, 06/20/25 19:57:49
+LogICUInternationalization: OS requested locale 'en_AU' is not supported. Using the OS requested language of 'en-AU' as the locale.
+LogICUInternationalization: ICU TimeZone Detection - Raw Offset: +10:00, Platform Override: ''
+LogConfig: No local boot hotfix file found at: [/home/platinumlucario/.config/Epic/CrashReportClient/Saved/PersistentDownloadDir/HotfixForNextBoot.txt]
+LogInit: ExecutableName: CrashReportClientEditor
+LogInit: Build: UE5-CL-0
+LogInit: Platform=Linux
+LogInit: MachineId=85d5a0e9aee94452914f20e0d11ff7f6-000003e8
+LogInit: DeviceId=
+LogInit: Engine Version: 5.5.4-0+UE5
+LogInit: Compatible Engine Version: 5.5.0-0+UE5
+LogInit: Net CL: 0
+LogInit: OS: Fedora Linux 42 (Workstation Edition) (6.14.9-300.fc42.x86_64), CPU: AMD Ryzen Threadripper 3970X 32-Core Processor, GPU: UnknownVendor
+LogInit: Compiled (64-bit): May  9 2025 23:07:39
+LogInit: Architecture: x64
+LogInit: Compiled with Clang: 18.1.0rc (github.com/llvm/llvm-project 461274b81d8641eab64d494accddc81d7db8a09e)
+LogInit: Build Configuration: Shipping
+LogInit: Branch Name: UE5
+LogInit: Command Line:  -Abslog="/run/media/platinumlucario/Storage/source/repos/Exborne/Saved/Logs/Exborne-CRC.log" "/run/media/platinumlucario/Storage/source/repos/Exborne/Saved/Crashes/crashinfo-Exborne-pid-653872-0D6046B00C674BDFBEF1720B9C8D8C9F/"
+LogInit: Base Directory: /home/platinumlucario/UnrealEngine/5.5.4/Engine/Binaries/Linux/
+LogInit: Allocator: Mimalloc
+LogInit: Installed Engine Build: 1
+LogInit: This binary is optimized with LTO: no, PGO: no, instrumented for PGO data collection: no
+LogInit: Presizing for max 2097152 objects, including 1 objects not considered by GC.
+LogInit: Object subsystem initialized
+LogConfig: Applying CVar settings from Section [ConsoleVariables] File [Engine]
+[2025.06.20-09.57.49:788][  0]LogConfig: Set CVar [[memory.MemoryPressureCriticalThresholdMB:512]]
+[2025.06.20-09.57.49:788][  0]LogInit: Unix hardware info:
+[2025.06.20-09.57.49:788][  0]LogInit:  - we are the first instance of this executable
+[2025.06.20-09.57.49:788][  0]LogInit:  - this process' id (pid) is 3338951, parent process' id (ppid) is 653872
+[2025.06.20-09.57.49:788][  0]LogInit:  - we are not running under debugger
+[2025.06.20-09.57.49:788][  0]LogInit:  - machine network name is 'fedora'
+[2025.06.20-09.57.49:788][  0]LogInit:  - user name is 'platinumlucario' (platinumlucario)
+[2025.06.20-09.57.49:788][  0]LogInit:  - we're logged in locally
+[2025.06.20-09.57.49:788][  0]LogInit:  - we're running with rendering
+[2025.06.20-09.57.49:788][  0]LogInit:  - CPU: AuthenticAMD 'AMD Ryzen Threadripper 3970X 32-Core Processor' (signature: 0x830F10)
+[2025.06.20-09.57.49:788][  0]LogInit:  - Number of physical cores available for the process: 32
+[2025.06.20-09.57.49:788][  0]LogInit:  - Number of logical cores available for the process: 63
+[2025.06.20-09.57.49:788][  0]LogInit:  - GPU Brand Info: UnknownVendor
+[2025.06.20-09.57.49:788][  0]LogInit:  - Memory allocator used: Mimalloc
+[2025.06.20-09.57.49:788][  0]LogInit:  - This is an internal build.
+[2025.06.20-09.57.49:788][  0]LogCore: Skipped benchmarking clocks because the engine is running in a standalone program mode - CLOCK_MONOTONIC will be used.
+[2025.06.20-09.57.49:788][  0]LogInit: Unix-specific commandline switches:
+[2025.06.20-09.57.49:788][  0]LogInit:  -ansimalloc - use malloc()/free() from libc (useful for tools like valgrind and electric fence)
+[2025.06.20-09.57.49:788][  0]LogInit:  -jemalloc - use jemalloc for all memory allocation
+[2025.06.20-09.57.49:788][  0]LogInit:  -binnedmalloc - use binned malloc  for all memory allocation
+[2025.06.20-09.57.49:788][  0]LogInit:  -filemapcachesize=NUMBER - set the size for case-sensitive file mapping cache
+[2025.06.20-09.57.49:788][  0]LogInit:  -useksm - uses kernel same-page mapping (KSM) for mapped memory (OFF)
+[2025.06.20-09.57.49:788][  0]LogInit:  -ksmmergeall - marks all mmap'd memory pages suitable for KSM (OFF)
+[2025.06.20-09.57.49:788][  0]LogInit:  -preloadmodulesymbols - Loads the main module symbols file into memory (OFF)
+[2025.06.20-09.57.49:788][  0]LogInit:  -sigdfl=SIGNAL - Allows a specific signal to be set to its default handler rather then ignoring the signal
+[2025.06.20-09.57.49:788][  0]LogInit:  -crashhandlerstacksize - Allows setting crash handler stack sizes (204800)
+[2025.06.20-09.57.49:788][  0]LogInit:  -noexclusivelockonwrite - disables marking files created by the engine as exclusive locked while the engine has them opened
+[2025.06.20-09.57.49:788][  0]LogInit:  -httpproxy=ADDRESS:PORT - redirects HTTP requests to a proxy (only supported if compiled with libcurl)
+[2025.06.20-09.57.49:788][  0]LogInit:  -reuseconn - allow libcurl to reuse HTTP connections (only matters if compiled with libcurl)
+[2025.06.20-09.57.49:788][  0]LogInit:  -virtmemkb=NUMBER - sets process virtual memory (address space) limit (overrides VirtualMemoryLimitInKB value from .ini)
+[2025.06.20-09.57.49:788][  0]LogInit:  -allowsyscallfilterfile=PATH_TO_FILE - sets up a system call filter allow list. any invalid syscall in this list *will* cause a crash
+[2025.06.20-09.57.49:788][  0]LogInit:  - Physical RAM available (not considering process quota): 126 GB (128655 MB, 131743328 KB, 134905167872 bytes)
+[2025.06.20-09.57.49:788][  0]LogInit:  - VirtualMemoryAllocator pools will grow at scale 1
+[2025.06.20-09.57.49:788][  0]LogInit:  - MemoryRangeDecommit() will be a no-op (re-run with -vmapoolevict to change)
+[2025.06.20-09.57.49:788][  0]LogInit:  - PageSize 4096
+[2025.06.20-09.57.49:788][  0]LogInit:  - BinnedPageSize 65536
+[2025.06.20-09.57.49:790][  0]LogUObjectArray: 547 objects as part of root set at end of initial load.
+[2025.06.20-09.57.49:790][  0]LogUObjectArray: 0 objects are not in the root set, but can never be destroyed because they are in the DisregardForGC set.
+[2025.06.20-09.57.49:790][  0]LogUObjectArray: CloseDisregardForGC: 547/547 objects in disregard for GC pool
+[2025.06.20-09.57.49:791][  0]LogInit: Using OS detected language (en-AU).
+[2025.06.20-09.57.49:791][  0]LogInit: Using OS detected locale (en-AU).
+[2025.06.20-09.57.49:791][  0]LogTextLocalizationManager: No specific localization for 'en-AU' exists, so 'en' will be used for the language.
+[2025.06.20-09.57.49:820][  0]LogInit: Using OS detected language (en-AU).
+[2025.06.20-09.57.49:820][  0]LogInit: Using OS detected locale (en-AU).
+[2025.06.20-09.57.49:820][  0]LogTextLocalizationManager: No localization for 'en-AU' exists, so 'en' will be used for the language.
+[2025.06.20-09.57.49:820][  0]LogTextLocalizationManager: No localization for 'en-AU' exists, so 'en' will be used for the locale.
+[2025.06.20-09.57.49:820][  0]LogPackageLocalizationCache: Processed 2 localized package path(s) for 1 prioritized culture(s) in 0.000025 seconds
+[2025.06.20-09.57.49:821][  0]CrashReportCoreLog: Display: Applying project settings from '/run/media/platinumlucario/Storage/source/repos/Exborne/Saved/Crashes/crashinfo-Exborne-pid-653872-0D6046B00C674BDFBEF1720B9C8D8C9F/CrashReportClient.ini'.
+[2025.06.20-09.57.49:821][  0]CrashReportCoreLog: CrashReportClientVersion=1.0
+[2025.06.20-09.57.49:821][  0]CrashReportCoreLog: CrashReportReceiver disabled
+[2025.06.20-09.57.49:821][  0]CrashReportCoreLog: DataRouter disabled
+[2025.06.20-09.57.49:821][  0]LogInit: Initializing SDL.
+[2025.06.20-09.57.50:403][  0]LogInit: Initialized SDL 2.30.6 revision: SDL-2.30.6-no-vcs (compiled against 2.30.6)
+[2025.06.20-09.57.50:403][  0]LogInit: Using SDL video driver 'x11'
+[2025.06.20-09.57.50:406][  0]LogSlate: New Slate User Created. Platform User Id 0, User Index 0, Is Virtual User: 0
+[2025.06.20-09.57.50:406][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
+[2025.06.20-09.57.50:412][  0]LogSlate: Using FreeType 2.10.0
+[2025.06.20-09.57.50:412][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2025.06.20-09.57.50:412][  0]LogInit: Using SDL_WINDOW_OPENGL
+[2025.06.20-09.57.50:498][  0]LogInit: FSlateOpenGLContext::Initialize - creating OpenGL 2.1 context
+[2025.06.20-09.57.50:546][  0]CrashReportCoreLog: Initial state = Unknown UploadState value
+[2025.06.20-09.57.50:546][  0]CrashReportCoreLog: Initial state = Unknown UploadState value
+[2025.06.20-09.57.50:553][  0]LogInit: FSlateOpenGLContext::Initialize - creating OpenGL 2.1 context
+[2025.06.20-09.57.50:557][  0]LogSlate: Took 0.000045 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2025.06.20-09.57.50:557][  0]LogSlate: Took 0.000038 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2025.06.20-09.57.50:558][  0]LogSlate: Took 0.000042 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2025.06.20-09.57.55:109][  0]LogInit: FSlateOpenGLContext::Initialize - creating OpenGL 2.1 context
+[2025.06.20-09.58.07:498][  0]LogSlate: Request Window '' being destroyed
+[2025.06.20-09.58.07:500][  0]LogSlate: Request Window 'Exborne Crash Reporter' being destroyed
+[2025.06.20-09.58.07:500][  0]LogSlate: Window 'Exborne Crash Reporter' being destroyed
+[2025.06.20-09.58.07:501][  0]LogCore: Engine exit requested (reason: OnRequestExit)
+[2025.06.20-09.58.07:522][  0]CrashReportCoreLog: Final state (Receiver) = Unknown UploadState value
+[2025.06.20-09.58.07:522][  0]CrashReportCoreLog: Final state (Receiver) = Unknown UploadState value
+[2025.06.20-09.58.07:526][  0]LogSlate: Slate User Destroyed.  User Index 0, Is Virtual User: 0
+[2025.06.20-09.58.07:526][  0]LogCore: Engine exit requested (reason: CrashReportClientApp RequestExit; note: exit was already requested)
+[2025.06.20-09.58.07:526][  0]LogExit: Preparing to exit.
+[2025.06.20-09.58.07:545][  0]LogExit: Object subsystem successfully closed.
+[2025.06.20-09.58.07:545][  0]LogPakFile: Destroying PakPlatformFile
+[2025.06.20-09.58.07:545][  0]LogExit: Exiting.
+[2025.06.20-09.58.07:545][  0]LogInit: Tearing down SDL.
+[2025.06.20-09.58.07:563][  0]Log file closed, 06/20/25 19:58:07

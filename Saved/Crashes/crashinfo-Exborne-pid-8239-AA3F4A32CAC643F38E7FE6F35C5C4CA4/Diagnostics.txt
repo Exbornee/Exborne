@@ -1,0 +1,37 @@
+Generating report for minidump
+
+Application version 5.5.4.0
+ ... built from changelist 0
+
+OS version Linux 6.14.9-300.fc42.x86_64 (network name: fedora)
+Running 32 x86_64 processors (63 logical cores)
+Exception was "SIGSEGV: invalid attempt to write memory at address 0x0000000000000003"
+
+<SOURCE START>
+<SOURCE END>
+
+<CALLSTACK START>
+libUnrealEditor-VulkanRHI.so!FVulkanCommandBufferManager::WaitForCmdBuffer(FVulkanCmdBuffer*, float) [/home/platinumlucario/UnrealEngine/5.5.4/Engine/Source/./Runtime/VulkanRHI/Private/VulkanCommandBuffer.cpp:502]
+libUnrealEditor-VulkanRHI.so!FVulkanViewport::WaitForFrameEventCompletion() [/home/platinumlucario/UnrealEngine/5.5.4/Engine/Source/./Runtime/VulkanRHI/Private/VulkanViewport.cpp:285]
+libUnrealEditor-VulkanRHI.so!FVulkanViewport::Present(FVulkanCommandListContext*, FVulkanCmdBuffer*, FVulkanQueue*, FVulkanQueue*, bool) [/home/platinumlucario/UnrealEngine/5.5.4/Engine/Source/./Runtime/VulkanRHI/Private/VulkanViewport.cpp:1151]
+libUnrealEditor-VulkanRHI.so!FVulkanCommandListContext::RHIEndDrawingViewport(FRHIViewport*, bool, bool) [/home/platinumlucario/UnrealEngine/5.5.4/Engine/Source/./Runtime/VulkanRHI/Private/VulkanRHI.cpp:1247]
+libUnrealEditor-RHI.so!FRHICommand<FRHICommandEndDrawingViewport, FRHICommandEndDrawingViewportString2359>::ExecuteAndDestruct(FRHICommandListBase&) [/home/platinumlucario/UnrealEngine/5.5.4/Engine/Source/Runtime/RHI/Public/RHICommandListCommandExecutes.inl:575]
+libUnrealEditor-RHI.so!FRHICommandListBase::Execute() [/home/platinumlucario/UnrealEngine/5.5.4/Engine/Source/./Runtime/RHI/Private/RHICommandList.cpp:429]
+libUnrealEditor-RHI.so!FRHICommandListExecutor::FTranslateState::Translate(FRHICommandListBase*) [/home/platinumlucario/UnrealEngine/5.5.4/Engine/Source/./Runtime/RHI/Private/RHICommandList.cpp:902]
+libUnrealEditor-RHI.so!UE::Core::Private::Function::TFunctionRefCaller<FRHICommandListExecutor::FSubmitState::Dispatch(FRHICommandListBase*)::$_0, void>::Call(void*) [/home/platinumlucario/UnrealEngine/5.5.4/Engine/Source/./Runtime/RHI/Private/RHICommandList.cpp:871]
+libUnrealEditor-RHI.so!FRHICommandListExecutor::FTaskPipe::Execute(FRHICommandListExecutor::FTaskPipe::FTask*, TRefCountPtr<FBaseGraphTask> const&) const [/home/platinumlucario/UnrealEngine/5.5.4/Engine/Source/Runtime/Core/Public/Templates/Function.h:470]
+libUnrealEditor-Core.so!TGraphTask<TFunctionGraphTaskImpl<void (ENamedThreads::Type, TRefCountPtr<FBaseGraphTask> const&), (ESubsequentsMode::Type)0> >::ExecuteTask() [/home/platinumlucario/UnrealEngine/5.5.4/Engine/Source/Runtime/Core/Public/Templates/Function.h:470]
+libUnrealEditor-Core.so!UE::Tasks::Private::FTaskBase::TryExecuteTask() [/home/platinumlucario/UnrealEngine/5.5.4/Engine/Source/Runtime/Core/Public/Tasks/TaskPrivate.h:504]
+libUnrealEditor-Core.so!FNamedTaskThread::ProcessTasksNamedThread(int, bool) [/home/platinumlucario/UnrealEngine/5.5.4/Engine/Source/Runtime/Core/Public/Async/TaskGraphInterfaces.h:482]
+libUnrealEditor-Core.so!FNamedTaskThread::ProcessTasksUntilQuit(int) [/home/platinumlucario/UnrealEngine/5.5.4/Engine/Source/./Runtime/Core/Private/Async/TaskGraph.cpp:667]
+libUnrealEditor-RenderCore.so!FRHIThread::Run() [/home/platinumlucario/UnrealEngine/5.5.4/Engine/Source/./Runtime/RenderCore/Private/RenderingThread.cpp:269]
+libUnrealEditor-Core.so!FRunnableThreadPThread::Run() [/home/platinumlucario/UnrealEngine/5.5.4/Engine/Source/./Runtime/Core/Private/HAL/PThreadRunnableThread.cpp:25]
+libUnrealEditor-Core.so!FRunnableThreadPThread::_ThreadProc(void*) [/home/platinumlucario/UnrealEngine/5.5.4/Engine/Source/Runtime/Core/Private/HAL/PThreadRunnableThread.h:187]
+libc.so.6!UnknownFunction(0x711d3)
+libc.so.6!UnknownFunction(0xf3ceb)
+
+<CALLSTACK END>
+
+0 loaded modules
+
+Report end!
